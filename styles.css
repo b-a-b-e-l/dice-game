@@ -17,15 +17,15 @@ body {
   background-color: #909090;
   box-shadow: 0px 0px 53px 0px #d1d1d1;
   border-radius: 33px;
-  padding: 23px;
+  padding: 16px;
 }
 .dice-box {
-  padding: 33px;
+  padding: 23px;
   border-radius: 33px;
 }
 .dice {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: #7b7b7b;
   margin: 0 auto;
 }
@@ -53,7 +53,7 @@ img {
 button {
   color: #fff;
   padding: 20px 30px;
-  font-size: 43px;
+  font-size: 33px;
   font-family: "Play", sans-serif;
   border: none;
   border-radius: 33px;
@@ -122,13 +122,13 @@ button:focus {
   color: #fcdfba;
   border: 2.5px solid #fcdfba;
   border-radius: 33px;
-  margin: 20 5px;
+  margin: 10 5px;
 }
 .player2 {
   color: #baffc8;
   border: 2.5px solid #baffc8;
   border-radius: 33px;
-  margin: 20 5px;
+  margin: 10 5px;
 }
 
 .notes {
@@ -137,13 +137,17 @@ button:focus {
   border-radius: 33px;
   margin: 10 5px;
   padding: 10px;
-  font-size: 33px;
+  font-size: 30px;
 }
 
 h1 {
-  font-size: 37px;
+  font-size: 33px;
   padding: 10px;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 .footer-link {
