@@ -1,3 +1,6 @@
 # Dice Game
 - JavaScript
-- - - - - - - - Customized visuals and counter
+- Customized dice images
+- CSS animations
+
+http://tiny.cc/dice-game
