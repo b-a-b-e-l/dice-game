@@ -1,65 +1,89 @@
 html,
 body {
-  --color-1: #a8e6cf;
-  --color-2: #dcedc1;
-  --color-3: #ffd3b6;
-  --color-4: #ffaaa5;
-  --color-5: #ff8b94;
   margin: 0;
   padding: 0;
 }
 
 body {
-  padding-top: 50px;
-  background-image: linear-gradient(135deg, var(--color-1), var(--color-2));
-  font-family: "Roboto", sans-serif;
-  height: 100vh;
-  color: black;
+  padding-top: 33px;
+  font-family: "Play", sans-serif;
+  background-color: #7b7b7b;
 }
 
 .container {
-  width: 400px;
+  width: 500px;
   text-align: center;
   margin: 0 auto;
-  background-color: white;
-  box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
-  padding: 50px;
+  background-color: #909090;
+  box-shadow: 0px 0px 53px 0px #d1d1d1;
+  border-radius: 33px;
+  padding: 23px;
 }
-
-.players {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+.dice-box {
+  padding: 33px;
+  border-radius: 33px;
 }
-
 .dice {
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  background-color: var(--color-3);
+  width: 200px;
+  height: 200px;
+  background-color: #7b7b7b;
   margin: 0 auto;
-  font-size: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
+img {
+  display: block;
+  border-radius: 33px;
+  animation: roll 0.6s ease-in-out;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(50deg);
+  }
+  33% {
+    transform: rotate(-30deg);
+  }
+  66% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 button {
   color: #fff;
   padding: 20px 30px;
-  font-size: 20px;
-  margin-top: 40px;
+  font-size: 43px;
+  font-family: "Play", sans-serif;
   border: none;
-  border-radius: 5px;
+  border-radius: 33px;
   cursor: pointer;
+  margin: 0 auto;
+  margin-top: 45px;
+  text-transform: uppercase;
 }
 
 #rollBtn {
-  background-color: var(--color-5);
+  background-color: #fff;
+  color: #e2bef1;
+  animation: glowroll 1s infinite;
+  box-shadow: 0px 0px 53px 15px #e2bef1;
 }
-
+@keyframes glowroll {
+  0% {
+    box-shadow: 0px 0px 53px 15px #e2bef1;
+  }
+  50% {
+    box-shadow: 0px 0px 33px 7px #e2bef1;
+  }
+  100% {
+    box-shadow: 0px 0px 53px 15px #e2bef1;
+  }
+}
 #resetBtn {
-  background-color: var(--color-4);
+  background-color: #fff;
+  color: #f9b3ba;
+  box-shadow: 0px 0px 53px 15px #f9b3ba;
 }
 
 button:focus {
@@ -69,7 +93,69 @@ button:focus {
 #resetBtn {
   display: none;
 }
+.glowreset {
+  animation: glowreset 1s infinite;
+  box-shadow: 0px 0px 53px 15px #f9b3ba;
+}
 
-.active {
-  box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+@keyframes glowreset {
+  0% {
+    box-shadow: 0px 0px 53px 15px #f9b3ba;
+  }
+  50% {
+    box-shadow: 0px 0px 33px 7px #f9b3ba;
+  }
+  100% {
+    box-shadow: 0px 0px 53px 15px #f9b3ba;
+  }
+}
+
+.players {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  margin-top: 45px;
+}
+
+.player1 {
+  color: #fcdfba;
+  border: 2.5px solid #fcdfba;
+  border-radius: 33px;
+  margin: 20 5px;
+}
+.player2 {
+  color: #baffc8;
+  border: 2.5px solid #baffc8;
+  border-radius: 33px;
+  margin: 20 5px;
+}
+
+.notes {
+  color: #e2bef1;
+  border: 2.5px solid #e2bef1;
+  border-radius: 33px;
+  margin: 10 5px;
+  padding: 10px;
+  font-size: 33px;
+}
+
+h1 {
+  font-size: 37px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.footer-link {
+  text-align: center;
+  color: #e2bef1;
+}
+.footer-link a {
+  color: #feffbb;
+  text-decoration: none;
+}
+.footer-link a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 3px #feffbb;
+  text-decoration: none;
 }

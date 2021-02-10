@@ -1,30 +1,56 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 id="message">START: Player 1</h1>
+    <div id="container" class="container">
+      <h1 id="message" class="player1">START: Player 1</h1>
+      <div id="dice-box" class="dice dice-box"></div>
+
+      <!--dice ends-->
+      <div>
+        <button id="rollBtn">Roll Dice</button>
+        <button id="resetBtn">Reset Game</button>
+      </div>
+      <!--buttons ends-->
       <div class="players">
-        <div id="player1">
-          <h1>
-            Score:
-            <span id="player1Scoreboard">0</span>
-          </h1>
-          <div id="player1Dice" class="dice active">-</div>
+        <div id="player1" class="player1">
+          <h2>Player 1</h2>
+          <h2 id="player1Scoreboard">0</h2>
         </div>
-        <div id="player2">
-          <h1>
-            Score:
-            <span id="player2Scoreboard">0</span>
-          </h1>
-          <div id="player2Dice" class="dice">-</div>
+        <div id="player2" class="player2">
+          <h2>Player 2</h2>
+          <h2 id="player2Scoreboard">0</h2>
         </div>
       </div>
-
-      <button id="rollBtn">Roll Dice 🎲</button>
-      <button id="resetBtn">Reset Game 🔁</button>
+      <!--players ends-->
+      <h2 class="notes">Reach 20 points to win !</h2>
     </div>
+    <!--container ends-->
+    <footer>
+      <p class="footer-link">
+        <a
+          href="https://github.com/b-a-b-e-l/Emoji"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Source Code</a
+        >
+        by Belén Bednarski
+        <a
+          href="https://tender-hermann-d064c8.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Hosted on Netlify
+        </a>
+      </p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
